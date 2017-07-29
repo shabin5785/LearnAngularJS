@@ -20,6 +20,12 @@ Its a super set to JS. Features like classes, interfaces, types etc. So we can h
 -CSS @import is relative to the current working directory.
 So using the prefix ~ at the start of the path tells the Webpack loader to resolve the import "like a module".
 
-- Usually the starting file, like index.html has an ang tag that points to teh root component. This custom component or tag is declared in the ts file for a component say xyz.ts. Inside that we define the component  with selector name same as the component, and also give it template and style urls to be used.all of has .component in its name( is this needed?)
+- Usually the starting file, like index.html has an ang tag that points to teh root component. This custom component or tag is declared in the ts file for a component say xyz.ts. Inside that we define the component  with selector name same as the component, and also give it template and style urls to be used.all of has .component in its name( is this needed?). 
+So a component has atleast 3 associated files: component.ts, style and template. Additionlay we can have the spec file for testing as well
+
+the serve process bundles all the files and builds them. For the process the first file to be executed is the main.ts file. Inside that we bootstraps the angular app by passing the module file for the component that we created above. So the component has one more file, the module file, named as app.module.ts
+in the module file we define the components that it needs to start, like inject components to it. THis is the base component that we defined earlier. All of them are referred by their exported class name so can be anything.
+
+
 
 
