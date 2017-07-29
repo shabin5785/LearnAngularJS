@@ -42,3 +42,5 @@ The above given is the startup that happens when we first load the page. Trigger
 - A component is a TS class that angular is able to instantiate. We define a normal TS class and add angular code to make it a component. For this we use TS feature called decorators. Decorators allows us to enhance classes. So here make the normal TS class a component. We add @component annotation and then give meta data to it like the selectore, tempalte etc
 
 - After creating a component we have to register it in the module.
+
+- In module: boostrap to startup, declaration for components and imports for importing other modules.
