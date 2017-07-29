@@ -19,3 +19,7 @@ Its a super set to JS. Features like classes, interfaces, types etc. So we can h
 
 -CSS @import is relative to the current working directory.
 So using the prefix ~ at the start of the path tells the Webpack loader to resolve the import "like a module".
+
+- Usually the starting file, like index.html has an ang tag that points to teh root component. This custom component or tag is declared in the ts file for a component say xyz.ts. Inside that we define the component  with selector name same as the component, and also give it template and style urls to be used.all of has .component in its name( is this needed?)
+
+
