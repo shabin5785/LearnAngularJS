@@ -32,5 +32,9 @@ So the flow is like this:
 Build starts on index.html through main.ts. Main.ts has an import for a module defined by us, say AppMod. This is given to the bootstrap contsructor of angular. In AppMod,  we define the components that it needs to bootstrap. This components are again defined by us. Say one is AppComponent. Inside the Appcomponet, we define the selector (or a tag). Now this tag, thru this flow is known to angular and can be used inside html files. When we use this tag or selector, the associated tempalte and style for the tag is invoked to render the page. This is how we get the date.
 As all these modules, components etc are TS file, we export classes that is used across file by importing them.
 
+The above given is the startup that happens when we first load the page. Triggered by the scripts inside index.html, added by the build process
 
+- So angular in effect changes the DOM at runtime by parsing and executing angualr tags
+- Components are the base for angular. We inject modules, and modules in turn refer to components. Its the componetns that has the tempalte and style. We usually define a root component that holds all other components together
 
+- An angular app is composed of components. We can have many that makes up an application.
