@@ -24,8 +24,13 @@ So using the prefix ~ at the start of the path tells the Webpack loader to resol
 So a component has atleast 3 associated files: component.ts, style and template. Additionlay we can have the spec file for testing as well
 
 the serve process bundles all the files and builds them. For the process the first file to be executed is the main.ts file. Inside that we bootstraps the angular app by passing the module file for the component that we created above. So the component has one more file, the module file, named as app.module.ts
-in the module file we define the components that it needs to start, like inject components to it. THis is the base component that we defined earlier. All of them are referred by their exported class name so can be anything.
+in the module file we define the components that it needs to start, like inject components to it. THis is the base component that we defined earlier. All of them are referred by their exported class name so can be anything. Now the component has the selector or tag used inside index.html and angular knows about it now.
 
+All this is triggered by the build process that runs on index.html and starts with main.ts
+
+So the flow is like this:
+Build starts on index.html through main.ts. Main.ts has an import for a module defined by us, say AppMod. This is given to the bootstrap contsructor of angular. In AppMod,  we define the components that it needs to bootstrap. This components are again defined by us. Say one is AppComponent. Inside the Appcomponet, we define the selector (or a tag). Now this tag, thru this flow is known to angular and can be used inside html files. When we use this tag or selector, the associated tempalte and style for the tag is invoked to render the page. This is how we get the date.
+As all these modules, components etc are TS file, we export classes that is used across file by importing them.
 
 
 
