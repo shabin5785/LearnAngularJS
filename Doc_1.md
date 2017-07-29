@@ -35,6 +35,10 @@ As all these modules, components etc are TS file, we export classes that is used
 The above given is the startup that happens when we first load the page. Triggered by the scripts inside index.html, added by the build process
 
 - So angular in effect changes the DOM at runtime by parsing and executing angualr tags
-- Components are the base for angular. We inject modules, and modules in turn refer to components. Its the componetns that has the tempalte and style. We usually define a root component that holds all other components together
+- Components are the base for angular. We inject modules, and modules in turn refer to components. Its the componetns that has the tempalte and style. We usually define a root component that holds all other components together. this root component is given to the bootstrap array to start up.
 
-- An angular app is composed of components. We can have many that makes up an application.
+- An angular app is composed of components. We can have many that makes up an application. Better keep each component in separate folder. Also add component to names of files for ease.
+
+- A component is a TS class that angular is able to instantiate. We define a normal TS class and add angular code to make it a component. For this we use TS feature called decorators. Decorators allows us to enhance classes. So here make the normal TS class a component. We add @component annotation and then give meta data to it like the selectore, tempalte etc
+
+- After creating a component we have to register it in the module.
