@@ -41,6 +41,14 @@ The above given is the startup that happens when we first load the page. Trigger
 
 - A component is a TS class that angular is able to instantiate. We define a normal TS class and add angular code to make it a component. For this we use TS feature called decorators. Decorators allows us to enhance classes. So here make the normal TS class a component. We add @component annotation and then give meta data to it like the selectore, tempalte etc
 
-- After creating a component we have to register it in the module.
+- After creating a component we have to register it in the module. We dont use the components other than the root component in index.html. We use the new components in the other componetns html, starting from root component.
 
 - In module: boostrap to startup, declaration for components and imports for importing other modules.
+
+- we can also create componetns using CLI. ng generate is the command. ng g c is a short cut for same.
+
+- in a component instead of using an external tempalte file, we can define the html within TS itself. Inline style. We use template of inline and templateurl for external file. One of them should be present. Need to use tilde for multi line template code.
+
+- we can  link and use bootstrap for styling. Can also override the styling with ours by writing in css file for component
+
+- styleurls can be used to refer multipe styel sheets. We can also using styles, an inline styling.  Cant use both at once.
