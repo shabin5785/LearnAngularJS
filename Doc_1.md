@@ -61,4 +61,11 @@ we can put it in attribute style like :['app-server'] and then use it as attribu
 also can use class style selectors like '.app-server' and use it like below
 < div class="app-server"></div>
 
-- Databinding is done two ways. From TS backend (business logic) to the template (front end). also the other way around, taking user interactions to backend
+- Databinding is done two ways. From TS backend (business logic) to the template (front end). also the other way around, taking user interactions to backend (event bindings). We can combine both using two way bindings
+
+- String interpolatin operator can be used with anyting that returns a string, ternary operator or a fn or hard coded string etc. It can also take types that can be converted to string like number.
+We can also use a method in string interpolation. Now if we dont use the function braces to call the method,(), then the function name is taken as a string and the return value will be the fn definition.Means fn name points to the definition
+
+-[] brackets indicate to angular that we are using property binding
+
+
