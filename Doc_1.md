@@ -83,3 +83,13 @@ With two way we dont need to pass the event, get value, set it etc. Angular take
 - For Two-Way-Binding to work, you need to enable the ngModel  directive. This is done by adding the FormsModule  to the imports[]  array in the AppModule.
 You then also need to add the import from @angular/forms  in the app.module.ts file:
 import { FormsModule } from '@angular/forms';
+
+**Directives**
+They are instruction to dom from angular. Like add the component (app-server) or ngif etc. Components are kind of directives. Typically directives are added as attributes
+
+Directives add behaviour to an existing DOM element. One example use case for @Directive would be to add a highlight on mouse hover. A component, rather than adding behaviour to an existing DOM element, actually creates it's own view (hierarchy of DOM elements) with attached behaviour.
+Write a component when you want to create a reusable set of DOM elements of UI with custom behaviour. Write a directive when you want to write reusable behaviour to supplement existing DOM elements.
+
+A component is a directive-with-a-template and the @Component decorator is actually a @Directive decorator extended with template-oriented features.
+
+- Directives with * at beginnig are structural directives. They can modify the dom by either adding or removing components.
