@@ -77,5 +77,11 @@ We can also use a method in string interpolation. Now if we dont use the functio
 - the above example is one way data binding. we bind the event to backend. like text input or click etc. We can use two way data binding instead. we use both [] and () combined for this. [()].
 (input)="onServerNameInput($event)" // one way
 [(ngModel)]="serverName" // two way
+With two way binding if we cahnge in backedn, it reflects in front end. One way is from front end to backend only.
+With two way we dont need to pass the event, get value, set it etc. Angular takes care of that.
+
+- For Two-Way-Binding to work, you need to enable the ngModel  directive. This is done by adding the FormsModule  to the imports[]  array in the AppModule.
+You then also need to add the import from @angular/forms  in the app.module.ts file:
+import { FormsModule } from '@angular/forms'; 
 
 
