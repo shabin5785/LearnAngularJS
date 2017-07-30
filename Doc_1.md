@@ -72,6 +72,10 @@ We can also use a method in string interpolation. Now if we dont use the functio
 
 - we can pass dom event to backend by sending $event as argument to the backend method. So we can get the input string or form input or like that.
 
-- in TS we can set type of object to any like, event : any or specific like event: Event
+- in TS we can set type of object to any like, event : any or specific like event: Event. TS may need type casting like in java as generic types may not have some attributes.
+
+- the above example is one way data binding. we bind the event to backend. like text input or click etc. We can use two way data binding instead. we use both [] and () combined for this. [()].
+(input)="onServerNameInput($event)" // one way
+[(ngModel)]="serverName" // two way
 
 
