@@ -66,6 +66,12 @@ also can use class style selectors like '.app-server' and use it like below
 - String interpolatin operator can be used with anyting that returns a string, ternary operator or a fn or hard coded string etc. It can also take types that can be converted to string like number.
 We can also use a method in string interpolation. Now if we dont use the function braces to call the method,(), then the function name is taken as a string and the return value will be the fn definition.Means fn name points to the definition
 
--[] brackets indicate to angular that we are using property binding. So when we use a normal html attribute within [] ,like [disabled] then its binded to the class property that we specify. The dom property is binded to the backend.So the property updates dynamically.
+-[] brackets indicate to angular that we are using property binding. So when we use a normal html attribute within [] ,like [disabled] then its binded to the class property that we specify. The dom property is binded to the backend.So the property updates dynamically. Update dom dynamically ...
+
+- similary we can bind dom events to backend methods. Use () here, similar to square brackets above. So the event is now bound to a backend method.
+
+- we can pass dom event to backend by sending $event as argument to the backend method. So we can get the input string or form input or like that.
+
+- in TS we can set type of object to any like, event : any or specific like event: Event
 
 
