@@ -52,3 +52,13 @@ The above given is the startup that happens when we first load the page. Trigger
 - we can  link and use bootstrap for styling. Can also override the styling with ours by writing in css file for component
 
 - styleurls can be used to refer multipe styel sheets. We can also using styles, an inline styling.  Cant use both at once.
+
+- the selector in component can be an attribute style one instead of normal tag one 
+eg: 'app-server' , we have to use it like <app-server>
+we can put it in attribute style like :['app-server'] and then use it as attribute
+< div app-server></div>
+
+also can use class style selectors like '.app-server' and use it like below
+< div class="app-server"></div>
+
+- Databinding is done two ways. From TS backend (business logic) to the template (front end). also the other way around, taking user interactions to backend
