@@ -93,3 +93,9 @@ Write a component when you want to create a reusable set of DOM elements of UI w
 A component is a directive-with-a-template and the @Component decorator is actually a @Directive decorator extended with template-oriented features.
 
 - Directives with * at beginnig are structural directives. They can modify the dom by either adding or removing components.
+
+-ngstyle is a directive. not a structural one. We can use [] to bind a property of that directive to a backend value. 
+ngstyle has a property named ngstyle itself! ngstyle dynamically allows us to change the style.. ngclass allows us to dynamically add or remove classes
+
+-ngfor is a structurual directiev as it changes the dom. It can be used to show lits or iterate.
+*ngfor="let s of servers", where servers is the variable and s is the loop variable
