@@ -66,6 +66,6 @@ also can use class style selectors like '.app-server' and use it like below
 - String interpolatin operator can be used with anyting that returns a string, ternary operator or a fn or hard coded string etc. It can also take types that can be converted to string like number.
 We can also use a method in string interpolation. Now if we dont use the function braces to call the method,(), then the function name is taken as a string and the return value will be the fn definition.Means fn name points to the definition
 
--[] brackets indicate to angular that we are using property binding
+-[] brackets indicate to angular that we are using property binding. So when we use a normal html attribute within [] ,like [disabled] then its binded to the class property that we specify. The dom property is binded to the backend.So the property updates dynamically.
 
 
