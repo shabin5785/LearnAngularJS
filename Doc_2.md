@@ -14,3 +14,5 @@ Above create an attribute named "elements" in the app-server-comp. append @Input
 
 This can done only when parent needs to send data to child components..
 
+for @Input('abcd'), abcd is an alias. Now we can bind the attribute using 'abcd' only.
+
