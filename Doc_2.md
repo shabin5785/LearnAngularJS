@@ -6,3 +6,9 @@ these classes can be instantiated.
 Fields in TS classes can have access specifiers like public..  public name :string;
 
 - source maps allow us to map TS files to correspoding js files
+
+-to pass data between components : create a property in receiving component of the type of data it should recieve. Then from teh calling or invoking component pass data as attribute to the second component. All attributes are by default accessible within the component. so
+
+<app-server-comp *ngFor="let c of students" [elements]="c"></ app-server-comp>
+Above create an attribute named "elements" in the app-server-comp.
+
