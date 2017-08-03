@@ -7,8 +7,10 @@ Fields in TS classes can have access specifiers like public..  public name :stri
 
 - source maps allow us to map TS files to correspoding js files
 
--to pass data between components : create a property in receiving component of the type of data it should recieve. Then from teh calling or invoking component pass data as attribute to the second component. All attributes are by default accessible within the component. so
+-to pass data between components : create a property in receiving component of the type of data it should recieve. Then from teh calling or invoking component pass data as attribute to the second component. All attributes are by default accessible within the component. so make it a property and expose to outside using @input 
 
 <app-server-comp *ngFor="let c of students" [elements]="c"></ app-server-comp>
-Above create an attribute named "elements" in the app-server-comp.
+Above create an attribute named "elements" in the app-server-comp. append @Input (), decorator before the attribute as well.
+
+This can done only when parent needs to send data to child components..
 
