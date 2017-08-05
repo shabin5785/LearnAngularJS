@@ -41,6 +41,9 @@ Here we are using the childcomponent. The child emits a custom event called Serv
   
 The type of object here, and the object type in event definition are the same.
 
+Like input we can create alias names for output event tags..
 
+- Now the case where two child components need to talk to each other, we need to emit custom event from one child, parent listens for that, then emits data to the second child. This can get longer and messy. Like call back hell.
+Need to be careful with this long pipelines of emits and data( output and input)...
   
 
