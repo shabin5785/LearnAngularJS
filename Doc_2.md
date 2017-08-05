@@ -16,3 +16,31 @@ This can done only when parent needs to send data to child components..
 
 for @Input('abcd'), abcd is an alias. Now we can bind the attribute using 'abcd' only.
 
+- The reverse of above process is to send event from child to parent component. Like we do an operation in child component and we want to inform the parent of the event so that parent can handle the event. If this was to be done in child itself, we could have binded the event to child component. For parent, we need to create custom events, and include the data to be send to parent as well in the event.
+
+First we need to define events in child. 
+@Output() serverCreated = new EventEmitter<{ name: string, content: string }>();
+Here the type given to EventEmitter is the data or the type of event we will generate. This data can be passed to parent. @output is used as we are emitting events out of the component.(like @input to receive data)
+
+Now bind normal event listeners in child.   
+<button class="btn btn-primary" (click)="onAddServer()">Add Server</ button>
+
+In the onAddServer() method, we can now emit the custom event.
+onAddServer() {
+    this.serverCreated.emit({ name: this.newServerName, content: this.newServerContent });
+  }
+ 
+Now wherever we use this child component we can listen for this event and bind to it to handle it.
+	  <app-cockpit (serverCreated)="onServerAdded($event)"></app-cockpit>
+Here we are using the childcomponent. The child emits a custom event called ServerCreated on click of a button. We are listening to that in the place where we use it and then handling it in our custom method. Also the event has data passed to it, which we can capturing.. this is the custom object which we created. Use it like below
+
+  onServerAdded(serverData: { name: string, content: string }) {
+      name: serverData.name,
+      content: serverData.content
+  }
+  
+The type of object here, and the object type in event definition are the same.
+
+
+  
+
