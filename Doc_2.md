@@ -94,3 +94,5 @@ Using viewchild and contentChild we can get acccess to elements in DOM. But bett
 - Triggering event we can pass event to a method as any argument. it always refers to the event
 
 - In sample app hierarchy of events is there. as example. Recipe item emits event, which is received by reciepe list, which inturn emits it to the recipe main component. That inturn passes the data to the recipe item to display the details.
+
+- in sample app we have recipeComp which has recipe list and detail within that. The array of recipe is kept inside recipelist and not at recipe. Because recipe is a enclosing parent componetn htat holds all recipe related info. Recipelist instead holds the recipe so is hte parent for recipe item and hence holds the recipe array. WE can keep the array at any level, but this is more suited.
