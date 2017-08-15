@@ -89,4 +89,6 @@ ngonchange can be used to react to events and respond or modify them
 
 similar to ViewChild we have ContentChild, to be used within ng content
 
+Using viewchild and contentChild we can get acccess to elements in DOM. But better use teh angualr way to changing things..
+
 
