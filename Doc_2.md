@@ -91,4 +91,6 @@ similar to ViewChild we have ContentChild, to be used within ng content
 
 Using viewchild and contentChild we can get acccess to elements in DOM. But better use teh angualr way to changing things..
 
+- Triggering event we can pass event to a method as any argument. it always refers to the event
 
+- In sample app hierarchy of events is there. as example. Recipe item emits event, which is received by reciepe list, which inturn emits it to the recipe main component. That inturn passes the data to the recipe item to display the details.
