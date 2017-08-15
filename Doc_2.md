@@ -81,3 +81,12 @@ now with this, we have actual reference to DOM and we can change the value and a
 -ngAfterViewChecked - after change detector for ngAfterViewInit
 
 -ngOnDestory - called once component is to be destroyed by angular
+
+**Usecases for Life cycle methods**
+constructor and ngoninit runs when app loads and also for every new instance of component that we create.
+
+ngonchange can be used to react to events and respond or modify them
+
+similar to ViewChild we have ContentChild, to be used within ng content
+
+
