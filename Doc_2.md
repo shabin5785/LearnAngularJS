@@ -45,5 +45,14 @@ Like input we can create alias names for output event tags..
 
 - Now the case where two child components need to talk to each other, we need to emit custom event from one child, parent listens for that, then emits data to the second child. This can get longer and messy. Like call back hell.
 Need to be careful with this long pipelines of emits and data( output and input)...
-  
 
+- the styles in a css files applies only to the component they belogns to. It doesnt apply hierarchially. angular internally adds attributes to elements and then applies styles based on these. So Angular uses Style encapsualtion. FOr this angular applies unique attributes to all elements. This is like Shadow dom, a dom behind original dom. Angular then applues sytles to these elements.
+
+- We can add encapsulation attribute to component. We can set value to it from ViewEncapsulation, which has three values. Defautl is Emulated, which results in above shadow dom thing. If we choose none, the elements in dom does nto have attributes added to it by angular. So styles can be applied across components. Now we add this encapsualtion attribute to a component. So only this will not use the shadow dom concept while other components will continue using it, unless turned off. Third option Native is same as Emulated .But uses Shadow DOM concept of browser without angular intervention. So it is browser support based, So better use ANgualr suported one whihc will work in all browsers.
+
+- Instead of using a two way binding like below
+  <.input type="text" class="form-control" [(ngModel)]="newServerName">
+  we can use a reference to the input and pass it to the TS method.
+    < input type="text" class="form-control" #servername>
+    
+  Reference can be kept anywhere within tempaltes. But cannot be put in TS. so we need to pass it to TS from template. Also the refernce is the reference to the whole element, nt just the value.. So servername.value will give the value.
