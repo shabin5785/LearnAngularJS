@@ -56,3 +56,8 @@ Need to be careful with this long pipelines of emits and data( output and input)
     < input type="text" class="form-control" #servername>
     
   Reference can be kept anywhere within tempaltes. But cannot be put in TS. so we need to pass it to TS from template. Also the refernce is the reference to the whole element, nt just the value.. So servername.value will give the value.
+  
+- There is another way to bind TS attribute to DOM. decalre attribute in TS and add @ViewChild to it. Now this qualifier needs to knwo which component to bind to. So we can give it the reference we defined for the component as value or the selector , or like that
+@ViewChild('servername');
+The type of attribute is now ElementRef, and not the element itself like above. We can get the nativeElement of this ref, which is the underlyng element and then proceeed normally,.
+now with this, we have actual reference to DOM and we can change the value and attributes.. But Dont do this.Use the Angular Way
