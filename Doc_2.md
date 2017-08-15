@@ -79,3 +79,5 @@ now with this, we have actual reference to DOM and we can change the value and a
 -ngAfterViewInit - called after the components view (and child views) are initialized
 
 -ngAfterViewChecked - after change detector for ngAfterViewInit
+
+-ngOnDestory - called once component is to be destroyed by angular
