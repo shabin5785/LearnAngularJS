@@ -61,3 +61,6 @@ Need to be careful with this long pipelines of emits and data( output and input)
 @ViewChild('servername');
 The type of attribute is now ElementRef, and not the element itself like above. We can get the nativeElement of this ref, which is the underlyng element and then proceeed normally,.
 now with this, we have actual reference to DOM and we can change the value and attributes.. But Dont do this.Use the Angular Way
+
+
+- by default all data between opening and closing tags are lost. To keep this data, add ng-content place holder in template of a component and angualr will pass data between tags to it.
