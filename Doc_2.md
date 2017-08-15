@@ -64,3 +64,10 @@ now with this, we have actual reference to DOM and we can change the value and a
 
 
 - by default all data between opening and closing tags are lost. To keep this data, add ng-content place holder in template of a component and angualr will pass data between tags to it.
+
+**Life Cylce Methods**
+- ngOnChanges - called after a bound property changes. Its also executed when the component is intialized and after that for changes
+
+-ngOnInit - Once the component initalized. It will run after constructor
+
+-ngDoCheck - This will run whenever change detector runs. SO can run multipe times as angular runs changedetector to check on all properties and components.
