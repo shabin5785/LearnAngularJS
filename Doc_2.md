@@ -70,4 +70,12 @@ now with this, we have actual reference to DOM and we can change the value and a
 
 -ngOnInit - Once the component initalized. It will run after constructor
 
--ngDoCheck - This will run whenever change detector runs. SO can run multipe times as angular runs changedetector to check on all properties and components.
+-ngDoCheck - This will run whenever change detector runs. SO can run multipe times as angular runs changedetector to check on all properties and components. So it can run even if there is no change. It runs while checking for change.
+
+-ngAfterContentInit - called when ng-content was projected to the component
+
+-ngAfterContentChecked - after change detector runs for ng-content 
+
+-ngAfterViewInit - called after the components view (and child views) are initialized
+
+-ngAfterViewChecked - after change detector for ngAfterViewInit
