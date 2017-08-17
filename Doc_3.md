@@ -13,3 +13,8 @@ Now for a directive to affect a component, we need access to the component, For 
 We can change the component in construtor itself or use life cycle methods like onInit to affect the component. its upto us ..
 
 - After creatin directive we need to add it to angular module, as angular is not aware of it. Angular doesnt scan all files or we have to tell it to include new one we created. We add it under declarations
+< p appBasicHighlight> Style Me</p>
+Example of how to use customdirective .but this direct changing of DOM is not the angular way. So dont directly use the elementRef.
+
+- use ng g d to generate a directive.. similar to ng g c.
+
