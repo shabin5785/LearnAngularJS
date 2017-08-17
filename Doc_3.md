@@ -29,5 +29,13 @@ If we directly access the dom , we might get errors as not all elements will be 
   
   - we can also use the @HostBinding to bind a property of the component to the directive and change it. Like 
   @HostProperty('style.backgroundColor') bc= 'blue';
-  above we have bound the background color property and can now change it.
+  above we have bound the background color property and can now change it. This is an optional way of doing thigs.Renderer shouod work fine.
+  
+ - Above examples the value that directive sets is fixed. We may want to pass this value from DOM to the new directive. For this we can bind custom attributes to the directive and use it in the dom
+  @Input() highlightColor : string ='transparent';
+  
+  and the use it with customdirective like this:
+   < p appBetterHighlight [highlightColor]="'yellow'"> Style Better</p>
+   
+   above we have changed the value set inside the directive to the user provided one.
 
