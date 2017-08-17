@@ -17,4 +17,15 @@ We can change the component in construtor itself or use life cycle methods like 
 Example of how to use customdirective .but this direct changing of DOM is not the angular way. So dont directly use the elementRef.
 
 - use ng g d to generate a directive.. similar to ng g c.
+If we directly access the dom , we might get errors as not all elements will be present or dom is not built completely. So use the renderer and accress the componenet through it to be on safer side. This is better as well.
+
+- we might want our directives to responds to dom events. For that we bind the event to the directive class using hostlistner and then work on it.
+
+@HostListener('mouseenter') onmouseenter(eventRef: Event){
+    this.renderer.setStyle(this.elRef.nativeElement, 'background-color','blue');
+  } 
+  
+  above we are listening to the mousenter event on the component having our custom directive and the changing the color.
+  
+  
 
