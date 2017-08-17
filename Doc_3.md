@@ -1,3 +1,6 @@
-## A New Post
+**Diretictive  
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+- There are two types of Directives: Attribute and structural.
+Attribute is like normal html ones, which affects the element it is added to, like data or event binding. Structural one affects the DOM so have a * to point this to angular.
+
+- We cannot have more than one structural directive on an element.
