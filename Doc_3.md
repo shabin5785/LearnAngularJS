@@ -27,5 +27,7 @@ If we directly access the dom , we might get errors as not all elements will be 
   
   above we are listening to the mousenter event on the component having our custom directive and the changing the color.
   
-  
+  - we can also use the @HostBinding to bind a property of the component to the directive and change it. Like 
+  @HostProperty('style.backgroundColor') bc= 'blue';
+  above we have bound the background color property and can now change it.
 
