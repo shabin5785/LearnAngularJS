@@ -42,4 +42,5 @@ If we directly access the dom , we might get errors as not all elements will be 
  - How does adding the attribue bidning in directive work? It can be attribute of p tag or the directive. Answer is angular figures this out by checking the components and the directives.
  
  [highlightColor]="'yellow'"  and highlightColor="yellow"  shoudl work the same. With [] and '' and second with neither of them. But this type of property binding can be confused with real attribute of the component . so be careful using it.
-
+ 
+- A structural directive, like the one starting with *, will in backend, create a ng-template, and inject the code within that and then display it. We can choose not use the structural directive with * and use our own template. Both works the same way.
