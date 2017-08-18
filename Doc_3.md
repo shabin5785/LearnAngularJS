@@ -44,3 +44,15 @@ If we directly access the dom , we might get errors as not all elements will be 
  [highlightColor]="'yellow'"  and highlightColor="yellow"  shoudl work the same. With [] and '' and second with neither of them. But this type of property binding can be confused with real attribute of the component . so be careful using it.
  
 - A structural directive, like the one starting with *, will in backend, create a ng-template, and inject the code within that and then display it. We can choose not use the structural directive with * and use our own template. Both works the same way.
+
+- @Input() set appunless(condition : boolean) {
+    
+  }
+  
+  the name give should exactly match with the selector name that we gave. As when converting to template, the name mismatch will lead to property not found.
+  above is a setter of the property unless. Unless is really a property and the above method is the setter. So the setter is invoked when ever we change the property value. The condition is the structural condition that we pass frmo UI like ngIf.
+ 
+- We inject components and referneces to a component or directive in its Constructor.
+
+- Above structural directive needs the component its defined ( will always be a ng-template, as * gets converted to template) and the lcoation where it needs to be injected.
+For first we inject TemplateRef and second we inject ViewContainerRef
