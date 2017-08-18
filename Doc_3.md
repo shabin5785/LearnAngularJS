@@ -56,3 +56,7 @@ If we directly access the dom , we might get errors as not all elements will be 
 
 - Above structural directive needs the component its defined ( will always be a ng-template, as * gets converted to template) and the lcoation where it needs to be injected.
 For first we inject TemplateRef and second we inject ViewContainerRef
+
+- we have ngSwitch similar to the switch case in java.
+
+-@HostBinding('class.open') isOpen = false; we are binding the class property of the component to the TS variable here. class has all the css classes in an array. so we can refere to a css class named open like this. and set it to true to add it, false to remove.
