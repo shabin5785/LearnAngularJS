@@ -1,1 +1,1 @@
-- Service is a normal typescript class. No annotation is added to it.
+- Service is a normal typescript class. No annotation is added to it. Now dont just import the service class to another class and call methods inside that. Thats not the normal service behaviour.
