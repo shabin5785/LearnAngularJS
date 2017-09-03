@@ -18,3 +18,4 @@ To avoid this, and have same instance, dont give the servie to providers for chi
 
 - if we try to inject a service to a service, it fails. For injection to work in angular, angular needs the injectable to have some meta data. Service normally doesnt have that.
 So we need to add @Injectable to the servie. This make that class eligible for injection of other objects. Like we are making the class angular managerd. Like spring annotation. So angular can inject other objects to this class.
+Note that we add the metadata or annotation to the servie that receives other objects from angular...
