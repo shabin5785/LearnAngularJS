@@ -64,3 +64,9 @@ Now the navigate method takes an array , which should have the parts of the url,
 
 For this we can pass Current Active path to the navigate method. FOr this we inject ActivatedRoute, which points to the current path and then configure navigate method to work relative to that path.
 The config to the navigate method is an js object. We can set many options in that, one being relative to
+
+Parameters to Routes
+--------------------
+Usual way to passing parameters. Set path like '/users/:id' and point it to some component that we need. Now we can access the id value on loading the route.
+To get teh value, inject ActivatedRoute to the TS file ,and get value from the object, which has a huge set of data about current path, including params, 
+id: this.currRoute.snapshot.params['id'].
