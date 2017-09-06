@@ -38,4 +38,9 @@ We then use  RouterModule.forRoot(appRoutes) to register the routes to angular
 The above directive is enough to load all routes based on url. We dont have to specify each component in page like
 <app-user> or <app-server> as the router will take care of loading the components.
 
+- we can set href="user" in a link to navigate. but this will cause a reload of application as clicking a link normally does. Thats the default html behavioour. This should be avoided. Use routerlink directive provided by angular for this.
+
+routerlink="/" for home and routerlink="user".. etc
+we can also use property binding for this [routerlink]="['/user','shoppin','edit']". here we can specify all parts of the url as elements of array. Only the first part needs to have '/' to make it absolute.
+
 
