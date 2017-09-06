@@ -85,3 +85,8 @@ To solve this, Router has an observable object called, params. We can subscribe 
  We need to use observable only in cases where the url pattern or syntax wont change( like reload page etc), but data is changing, Angular cannot load new data in this case using subscription, so we have to use observable.
  
  - Also wheneve we are manually setting  a subscription like above, we should unsubscribe it as well. Subsrciption is not strongly linked to component, So even if component is destryoed subscription is kept alive. Angular will clean it up for us, but its better for us to clean up ourselves.
+ 
+ - We can use queryparams attribute to pass query parameters to a path
+ [queryParams]="{allow:1}"
+ 
+ 
