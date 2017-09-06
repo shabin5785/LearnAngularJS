@@ -84,6 +84,8 @@ With two way we dont need to pass the event, get value, set it etc. Angular take
 You then also need to add the import from @angular/forms  in the app.module.ts file:
 import { FormsModule } from '@angular/forms';
 
+ **Always use property binding if the value is not just a plain string, like an JS object or complex one, or dynamic**
+
 **Directives**
 They are instruction to dom from angular. Like add the component (app-server) or ngif etc. Components are kind of directives. Typically directives are added as attributes
 
