@@ -80,3 +80,6 @@ To solve this, Router has an observable object called, params. We can subscribe 
           this.user.name = params['name'];
         }
       );
+ the subscription runs only when params change. During load the subscruption is setup and run for all further url changes.
+ 
+ We need to use observable only in cases where the url pattern or syntax wont change( like reload page etc), but data is changing, Angular cannot load new data in this case using subscription, so we have to use observable.
