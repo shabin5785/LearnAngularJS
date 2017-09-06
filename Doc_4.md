@@ -88,3 +88,4 @@ To solve this, Router has an observable object called, params. We can subscribe 
  
  - We can use queryparams attribute to pass query parameters to a path
  [queryParams]="{allow:1}" which gets converted to xxxx?allow=1
+ Similary fragments="abcd" adds the value to end of url. xxxx#abcd. There can only be one fragment though.
