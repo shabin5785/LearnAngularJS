@@ -123,3 +123,10 @@ Doing this causes the child routes to load in same page as parent. Not on separa
  
  - Wild card route is like { path :'** '}. Should be last in routes
  Also we can use redirectTo:'pathname' to redirect to an already defined path.
+ 
+ -default matching strategy is "prefix" , Angular checks if the path you entered in the URL does start with the path specified in the route. Of course every path starts with ''. So setting that as path will match all urls
+ To fix this behavior, you need to change the matching strategy to "full" :
+{ path: '', redirectTo: '/somewhere-else', pathMatch: 'full' } 
+Now, you only get redirected, if the full path is ''
+
+
