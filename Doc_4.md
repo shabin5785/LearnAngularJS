@@ -41,6 +41,6 @@ The above directive is enough to load all routes based on url. We dont have to s
 - we can set href="user" in a link to navigate. but this will cause a reload of application as clicking a link normally does. Thats the default html behavioour. This should be avoided. Use routerlink directive provided by angular for this.
 
 routerlink="/" for home and routerlink="user".. etc
-we can also use property binding for this [routerlink]="['/user','shoppin','edit']". here we can specify all parts of the url as elements of array. Only the first part needs to have '/' to make it absolute.
+we can also use property binding for this [routerlink]="['/user','shoppin','edit']". here we can specify all parts of the url as elements of array. Only the first part needs to have '/' to make it absolute. The array notation allows us to construct complex routes.
 
 
