@@ -119,3 +119,7 @@ Doing this causes the child routes to load in same page as parent. Not on separa
  params : abcd/:id
  queryparams: abcd?id=
  fragment: abcd#ffff
+ 
+ 
+ - Wild card route is like { path :'** '}. Should be last in routes
+ Also we can use redirectTo:'pathname' to redirect to an already defined path.
