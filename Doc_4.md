@@ -31,3 +31,11 @@ So can emit this event from one component and subscribe to it in another easily.
 ]
 path is the url that we enter and component is the one to use. so path="user" can be pointing to locahost:4200/user
 
+We then use  RouterModule.forRoot(appRoutes) to register the routes to angular
+
+- Now adding the component to pages will  not load the components based on routes. So we have to use a directive from router package to load the component based on pages.
+<router-outlet>
+The above directive is enough to load all routes based on url. We dont have to specify each component in page like
+<app-user> or <app-server> as the router will take care of loading the components.
+
+
