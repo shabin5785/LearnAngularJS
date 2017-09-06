@@ -51,4 +51,7 @@ Now anything related to base path or home path, can be relative or absolute. Bec
 
 For relative we can give paths like '../', which causes the path to go one level above in url, then append current path. Like browsing a directory. Also '../' will remove the currentyl loaded module or path, not just the last part of the url.
 
+- to set active link style in routing, we can use routerLinkActive directive to set the class or style. Angular will add the class to the current route.
+RouteLinkActive works by matching the paths by string match. So a url like /user, will match the root url '/' and user path, leading to both of them being styled. To control this we can use routelinkactiveoptions directive.
+
 
