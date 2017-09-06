@@ -107,3 +107,5 @@ To solve this, Router has an observable object called, params. We can subscribe 
   ]}
   
   Now the child components cannot be loaded inside router-outlet put for parent. For above, server component is parent and is usually loaded in app-root where it is inside router-outlet. now :id cannot load there. So we need to put a router-outlet within server component where we wants its childs to be loaded.
+  
+Doing this causes the child routes to load in same page as parent. Not on separate page, as they are now nested routes, so within same page.
