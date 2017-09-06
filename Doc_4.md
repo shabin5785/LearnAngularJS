@@ -130,3 +130,5 @@ Doing this causes the child routes to load in same page as parent. Not on separa
 Now, you only get redirected, if the full path is ''
 
 
+- We can put all routes in a separate module, configure it there, export it and use this module within the main app module. Makes the app more manageable.
+
