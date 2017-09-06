@@ -87,6 +87,4 @@ To solve this, Router has an observable object called, params. We can subscribe 
  - Also wheneve we are manually setting  a subscription like above, we should unsubscribe it as well. Subsrciption is not strongly linked to component, So even if component is destryoed subscription is kept alive. Angular will clean it up for us, but its better for us to clean up ourselves.
  
  - We can use queryparams attribute to pass query parameters to a path
- [queryParams]="{allow:1}"
- 
- 
+ [queryParams]="{allow:1}" which gets converted to xxxx?allow=1
