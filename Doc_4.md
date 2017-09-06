@@ -57,4 +57,10 @@ For relative we can give paths like '../', which causes the path to go one level
 - to set active link style in routing, we can use routerLinkActive directive to set the class or style. Angular will add the class to the current route.
 RouteLinkActive works by matching the paths by string match. So a url like /user, will match the root url '/' and user path, leading to both of them being styled. To control this we can use routelinkactiveoptions directive.
 
+- To programatically navigate, inject the Router to the comopnent and call the navigate method of the router. 
+Now the navigate method takes an array , which should have the parts of the url, either absolute or relative.
 
+- Programetic navigation, the navigate method does not know which url or path is currently loaded. But if we are using routerlink, its put in ui code and it can know the component. So the programetic navigation by default doesnt work with relative navigation. So we have to inform it the current path.
+
+For this we can pass Current Active path to the navigate method. FOr this we inject ActivatedRoute, which points to the current path and then configure navigate method to work relative to that path.
+The config to the navigate method is an js object. We can set many options in that, one being relative to
