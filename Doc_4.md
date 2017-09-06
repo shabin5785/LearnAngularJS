@@ -22,3 +22,12 @@ Note that we add the metadata or annotation to the servie that receives other ob
 
 - We can define model or events or triggers etc that can be used across the app. no need for input output complexity
 So can emit this event from one component and subscribe to it in another easily.
+
+**Routing**
+- a good location to add routes is in add module. Create object array of types Routes. Its of the form below
+[
+{path="user", component="UserComponent"},
+{path="", component="HomeComponent"}
+]
+path is the url that we enter and component is the one to use. so path="user" can be pointing to locahost:4200/user
+
