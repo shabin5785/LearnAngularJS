@@ -70,3 +70,13 @@ Parameters to Routes
 Usual way to passing parameters. Set path like '/users/:id' and point it to some component that we need. Now we can access the id value on loading the route.
 To get teh value, inject ActivatedRoute to the TS file ,and get value from the object, which has a huge set of data about current path, including params, 
 id: this.currRoute.snapshot.params['id'].
+
+Now the issue with using snapshot and getting params, is that, after loading the component if we change the url, the component is not loaded again. So param values are not updated in the TS class. 
+To solve this, Router has an observable object called, params. We can subscribe to changes in params object, and so whenever the param value is changed, the observable is triggered and we get new values.
+ this.currRoute.params
+      .subscribe(
+        (params: Params) => {
+          this.user.id = params['id'];
+          this.user.name = params['name'];
+        }
+      );
