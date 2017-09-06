@@ -97,3 +97,13 @@ To solve this, Router has an observable object called, params. We can subscribe 
  console.log(this.currRoute.snapshot.fragment);
  
  Or if we want this to be reactive we can set up an observer using queryParams.subscribe() and fragment.subscribe()
+ 
+ **All data from path or url is always string. convert it if needed.**
+ 
+ - We can have child routes by putting nested routes inside the path against a children array:
+  { path:'server', component:ServersComponent, children:[
+    { path:':id/edit', component:EditServerComponent},
+    { path:':id', component:ServerComponent}
+  ]}
+  
+  
