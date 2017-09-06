@@ -49,4 +49,6 @@ Absolute vs Relative path
 paths starting with '/' is an absolute path while wihtout '/' is relative.Relative paths will append the path to the current url. Relative paths can also be written as './'.
 Now anything related to base path or home path, can be relative or absolute. Because if its relative, it will be appended to '/' and will work. But from next level onwards, we have to carefully see if the url is to be relative or absolute and based on that give the link
 
+For relative we can give paths like '../', which causes the path to go one level above in url, then append current path. Like browsing a directory..
+
 
