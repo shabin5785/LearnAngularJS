@@ -26,8 +26,8 @@ So can emit this event from one component and subscribe to it in another easily.
 **Routing**
 - a good location to add routes is in add module. Create object array of types Routes. Its of the form below
 [
-{path="user", component="UserComponent"},
-{path="", component="HomeComponent"}
+{path:"user", component:"UserComponent"},
+{path:"", component:"HomeComponent"}
 ]
 path is the url that we enter and component is the one to use. so path="user" can be pointing to locahost:4200/user
 
