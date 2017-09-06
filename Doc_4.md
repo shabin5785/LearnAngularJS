@@ -96,4 +96,4 @@ To solve this, Router has an observable object called, params. We can subscribe 
  console.log(this.currRoute.snapshot.queryParams);
  console.log(this.currRoute.snapshot.fragment);
  
- Or if we want this to be reactive we can set up an observer using queryParams.subscribe()
+ Or if we want this to be reactive we can set up an observer using queryParams.subscribe() and fragment.subscribe()
