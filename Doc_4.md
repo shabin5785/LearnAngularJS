@@ -1,3 +1,5 @@
+- Always use property binding if the value is not just a plain string, like an JS object or complex one.
+
 - Service is a normal typescript class. No annotation is added to it. Now dont just import the service class to another class and call methods inside that. Thats not the normal service behaviour.
 
 - instead of us creating and using the object of service class, Use the Angular dependency injector to inject the objecct of the service and use it.
