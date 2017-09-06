@@ -113,5 +113,9 @@ Doing this causes the child routes to load in same page as parent. Not on separa
 - Query params are not reatined between routes. To retain, we can pass an extra config to the naviage function
 
  this.router.navigate(['edit'], {relativeTo:this.currRoute, queryParamsHandling:'preserve'});
- preserve: keep old 
+ preserve: keep old, by overwriting new
  merge : old + new
+ 
+ params : abcd/:id
+ queryparams: abcd?id=
+ fragment: abcd#ffff
