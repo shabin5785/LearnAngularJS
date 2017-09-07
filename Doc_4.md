@@ -145,3 +145,5 @@ CanDeactivate is used to control if we can leave a service .Like edit a form and
 - we can send data to a componet though a path declartion. Use the data property of the path for this. WE can then access this data in the component using the currRoute object snapshot.
 
 - We can use a resolver in a path to load or fetch some data before rendering the component. This will not check for validity of path like guard, but will allow some operation to be run before rendering. Same could be done in onInit, but it happends after render of the component. This is especially useful for async data to be initialized.
+
+- With normal url, the server hosting parses the url first before handling it to angular. So there is some contract to be acheived like on 404, index page should be returned etc. If we cannot achieve that, we can turn on hash mode in routing configuration and then the hosting server only takes care the part till # and angular will take of the part after that.
