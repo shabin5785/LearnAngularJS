@@ -136,3 +136,5 @@ Protecting Routes
 ------------------
 
 we can use a guard to protect routes. Each route takes a canActiavte property, which is an array of guards or just normal methods that evaulated some condition and return true or false. Based on this the path is either allowed or rejected.
+
+We can use canActivateChild guard and protect all child routes of a parent. The implementation is similar to the canActivate guard.
