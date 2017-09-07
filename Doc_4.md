@@ -141,3 +141,5 @@ We can use canActivateChild guard and protect all child routes of a parent. The 
 
 
 CanDeactivate is used to control if we can leave a service .Like edit a form and then leave without sasving.. we can prevent that. For this, the best way is for a component to check if its data or state is changed. We cannot do that normally like the canactivate way, as the separate guard doesnt have access to data inside the component. So we create a custom interface that needs to be implemented by all components needed deactivate guard, then we create a guard with CanDeactivate implemented, and provide it with all required arguments plus the custom interface we created. Now using that interface, we can access the data in components as the componet should haev implemented our custom interface. So using this technique we can use the inbuilt service customized wiht our service.
+
+- we can send data to a componet though a path declartion. Use the data property of the path for this.
