@@ -162,3 +162,5 @@ We use observable to handle async task, as we dont know when the events happen, 
 Observer is a different approach to promise or callbacks. There is no wrong in using promise or callbacks. 
 
 Subscribe method for an observer has three methods as arugments. First for data change or event ,second for error evetns and third for end of observable. We usually use the first one
+
+We can use Observable from rxjs to create our own Observable. Once the complete method is fired, observable will not emit anything after that.
