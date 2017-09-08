@@ -153,3 +153,12 @@ CanDeactivate is used to control if we can leave a service .Like edit a form and
 **Observables**
 ---------------------------------
 
+Observable is an object implemeting the observer pattern. It can be any data source like input of event etc.Observerable has a time line or stream of events or data that it emits. This can be triggered by us or by a button or my services like http. events can be the updated value of variables or params or response to query etc
+
+Observer is our code, that subscribes to observable.  Observer can handle data or errors or the completion of an observable event. These are the three types of data from observable. So we can write code for all three of them. **An observable doestn need to be complete at all, it can go on infinitely.**
+
+We use observable to handle async task, as we dont know when the events happen, we dont want to wait for them, block the program. So we create an observer to respond to that. 
+
+Observer is a different approach to promise or callbacks. There is no wrong in using promise or callbacks. 
+
+Subscribe method for an observer has three methods as arugments. First for data change or event ,second for error evetns and third for end of observable. We usually use the first one
