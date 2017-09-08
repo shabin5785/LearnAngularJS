@@ -149,3 +149,7 @@ CanDeactivate is used to control if we can leave a service .Like edit a form and
 - With normal url, the server hosting parses the url first before handling it to angular. So there is some contract to be acheived like on 404, index page should be returned etc. If we cannot achieve that, we can turn on hash mode in routing configuration and then the hosting server only takes care the part till # and angular will take of the part after that.
 
 - Always remember to clean up the subscriptions created.
+
+**Observables**
+---------------------------------
+
