@@ -165,4 +165,4 @@ Subscribe method for an observer has three methods as arugments. First for data 
 
 We can use Observable from rxjs to create our own Observable. Once the complete method is fired, observable will not emit anything after that.
 
-Observable will lead to memory leaks.Because subscription remains even after compoment is destroyed. So we should unsubscribe ourselves in destroy mehtod, ngOnDestroy. Usually observables built into angular clean themselves up. But still a good practice to follow
+Observable will lead to memory leaks.Because subscription remains even after compoment is destroyed. So we should unsubscribe ourselves in destroy mehtod, ngOnDestroy. Usually observables built into angular clean themselves up. But still a good practice to follow 
