@@ -1,5 +1,7 @@
 - Angular is a JS framework. It helps mainly to build single page applications.
 
+- there is no deafult two way binding in angular 2. we have property [] and event binding (). property wil  bind an ibject to backend, where we set some value and on page load or refresh we get laod value in frontend. For binding in either way to work, we need to bind the event as well, like input of value and set teh value to our vairbale. There is a short cut for that [()] does this for us, resulting in two way binding
+
 **## Angular 1 vs 2 vs 4**
  angular 2 is a complete rewrite of angualr 1. Angular 4 is an update on angular 2, compatable with angular 2. From version 4, the name is just Angular
  
