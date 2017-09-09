@@ -42,3 +42,7 @@ Now with property binding the value change reflects after submit or when an even
 - we can group elements in form together, like wihtin a div. Then give it a ngModelGroup directive with a name. In the form value, the results will be grouped together under a key with the name that we gave. Like a custom object.Other fields outside groupd will be like normal. We can even validate the group together as one object. Like name and password under user key and then validate user together.  Also this custom object will have controls like an individual element and we can interact it with like normal element, like cehck isDirty or valid.
 
 We can also add a local ref pointing it to the ngModelGroup like #user="ngModelGroup" and put it in the grouping element. We can then acccess it by passing it or by ViewChild.
+
+- to set value of a form element from TS, we can as alwasys use two way binding  to set value. Or if we have the form referene in TS, we can use the setValue method. It takes a JS object of exact structure as the form, like if we have grouping then group it like that. SO check the strucutre by printing hte form object once before setting it. Now here we have to set values for all the elements within the form that angular manages. Cannot miss anything at all. So not the best approach.
+
+- instead we can access the form object from the reference. Then use the patchdata method ,where we only need to set the required element. BUt keep in mind that we nned to keep the structure, ie, if the element is inside a grp, we have to maintain that structure..
