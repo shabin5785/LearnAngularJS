@@ -35,5 +35,6 @@ So use ng-invalid and ng-touched to show error for elements that are invalid but
 - to access individual elements of a form, we can creatae a reference in element and set it equal to ngModel. Now this will give access to the element and we can then check its state or control it from the template.
 
 - we can bind the ngmodel property to a backend variable and set default value for that or hard code it in template.
+Now with property binding the value change reflects after submit or when an event is fired. We can instead set up two way binding and control from from backend . 
 
-
+- ngModel without binding, results in we geettign value from form object, or use property bindig where value can be set to refeclt on page load. or use two way binding for instantly change it. We still get the two way binded object in backend.
