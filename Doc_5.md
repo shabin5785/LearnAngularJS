@@ -15,4 +15,4 @@ To do this add ngModel to the form elements we want to be part of the form objec
 
 - Use ngSubmit to submit the form. This will hook into the defautl form submit and trigger the angular method we added to the listener.
 
-
+- We can set #f="ngForm" in the form element. Now the reference f is pointing to the angular created form object for the template.
