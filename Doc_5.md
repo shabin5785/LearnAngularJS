@@ -38,3 +38,5 @@ So use ng-invalid and ng-touched to show error for elements that are invalid but
 Now with property binding the value change reflects after submit or when an event is fired. We can instead set up two way binding and control from from backend . 
 
 - ngModel without binding, results in we geettign value from form object, or use property bindig where value can be set to refeclt on page load. or use two way binding for instantly change it. We still get the two way binded object in backend.
+
+- we can group elements in form together, like wihtin a div. Then give it a ngModelGroup directive with a name. In the form value, the results will be grouped together under a key with the name that we gave. Like a custom object.Other fields outside groupd will be like normal. We can even validate the group together as one object. Like name and password under user key and then validate user together. 
