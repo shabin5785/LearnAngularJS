@@ -46,3 +46,5 @@ We can also add a local ref pointing it to the ngModelGroup like #user="ngModelG
 - to set value of a form element from TS, we can as alwasys use two way binding  to set value. Or if we have the form referene in TS, we can use the setValue method. It takes a JS object of exact structure as the form, like if we have grouping then group it like that. SO check the strucutre by printing hte form object once before setting it. Now here we have to set values for all the elements within the form that angular manages. Cannot miss anything at all. So not the best approach.
 
 - instead we can access the form object from the reference. Then use the patchdata method ,where we only need to set the required element. BUt keep in mind that we nned to keep the structure, ie, if the element is inside a grp, we have to maintain that structure..
+
+- call the reset method on form to reset the form and clear all state of form. We can pass values to reset form to set values and still get a clean state of valid and touched.
