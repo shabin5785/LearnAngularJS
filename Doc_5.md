@@ -39,4 +39,6 @@ Now with property binding the value change reflects after submit or when an even
 
 - ngModel without binding, results in we geettign value from form object, or use property bindig where value can be set to refeclt on page load. or use two way binding for instantly change it. We still get the two way binded object in backend.
 
-- we can group elements in form together, like wihtin a div. Then give it a ngModelGroup directive with a name. In the form value, the results will be grouped together under a key with the name that we gave. Like a custom object.Other fields outside groupd will be like normal. We can even validate the group together as one object. Like name and password under user key and then validate user together. 
+- we can group elements in form together, like wihtin a div. Then give it a ngModelGroup directive with a name. In the form value, the results will be grouped together under a key with the name that we gave. Like a custom object.Other fields outside groupd will be like normal. We can even validate the group together as one object. Like name and password under user key and then validate user together.  Also this custom object will have controls like an individual element and we can interact it with like normal element, like cehck isDirty or valid.
+
+We can also add a local ref pointing it to the ngModelGroup like #user="ngModelGroup" and put it in the grouping element. We can then acccess it by passing it or by ViewChild.
