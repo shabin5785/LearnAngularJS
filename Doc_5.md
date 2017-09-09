@@ -23,4 +23,8 @@ To do this add ngModel to the form elements we want to be part of the form objec
 
 - We can access the form by using ViewChild annotation to get access to the local reference object we created, instead of passing it. This can be useful if we want to refer an earlier submitted form while submittign another form.
 
+- We can add validations to template. Angular detects these and will enforce them for us.
+
+- Angular provides a lot of directives to be used for validations, one being email. It can also work with existing html attributes for validation like required, which is treated as an attribute, or inbuilt directives. This we put in template and angular takes care of the rest.
+
 
