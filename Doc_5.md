@@ -112,6 +112,8 @@ This JS object has the type for the elements inside the form, which usually are 
  
  - async validator is similar to above, difference is that it returns a promise or observable. Inside promise we return a similar object as above. Also async is added as third argument of the control field.
  
+ - each form and infact each form control filed has two subscribers we can use, One value change subscriber and one status change subsciber.
+ 
  
  
 
