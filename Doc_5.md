@@ -63,11 +63,13 @@ This JS object has the type for the elements inside the form, which usually are 
       'gender' : new FormControl('male')
     });
     
- - for reactive approach,  works on basis of ReactiveFormsModule class from angular forms. So need to add that to imports under module imports of appmodule
+ - for reactive approach,  works on basis of ReactiveFormsModule class from angular forms. So need to add that to imports under module imports of appmodule. by defautl angular is using formsModule which is the template one. replace it wiht reactive One.
  
  - we then bind form to formgroup and elements to formcontrol elements like below.
  < form  [formGroup]="singupForm"> 
  < input type="text formControlName="email">
+ 
+ 
  
  
  
