@@ -108,7 +108,9 @@ This JS object has the type for the elements inside the form, which usually are 
  Now the custom validation method is called by angular not by us. so this reference will not point to class, and so we have to bind it ourselves.
  'username' : new FormControl(null, [Validators.required, this.checkforbiddenNames.bind(this)]),
  
- - the key in object returned by custom validation method,  is added to the error object of that control field element.we can access it and then write custom code on basis of that.
+ - the key in object returned by custom validation method,  is added to the error object of that control field element.we can access it and then write custom code on basis of that. Now not only the custom validators, all the inbuilt validators are also added like this.
+ 
+ - async validator is similar to above, difference is that it returns a promise or observable. Inside promise we return a similar object as above. Also async is added as third argument of the control field.
  
  
  
