@@ -108,7 +108,7 @@ This JS object has the type for the elements inside the form, which usually are 
  Now the custom validation method is called by angular not by us. so this reference will not point to class, and so we have to bind it ourselves.
  'username' : new FormControl(null, [Validators.required, this.checkforbiddenNames.bind(this)]),
  
- 
+ - the key in object returned by custom validation method,  is added to the error object of that control field element.we can access it and then write custom code on basis of that.
  
  
  
