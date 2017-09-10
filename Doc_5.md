@@ -1,5 +1,7 @@
 **FORMS**
 --------------------
+**Proerty binding, if value is username we can omit the square brakcts and put like [abcd]="xxx". If we put like normal property binding [abc]="xyz", angular will search for xyz in TS class. To stop this we can use like [abcd]="'xxx'". This si complex, So use the first one**
+ 
 - Angular has two approaches for forms: Template driven, where we define a template and angular will infer the form elements and controls from that template. Other one is Reactive approach, where we define the elements, link them up and control the finer elements of the form.
 
 - We want angular to handle the forms. Not sent a http request on form submit. So we should not submit forms like normal http ones, but use angular to handle them
