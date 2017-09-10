@@ -53,3 +53,16 @@ We can also add a local ref pointing it to the ngModelGroup like #user="ngModelG
 **Reactive Approach**
 ----------------------------
 
+- Here we have to create the form object. IN reactive approach, angualr creates the object of type formgroup and wraps it around with ngform. Here we create an object of type formgroup and use it. Formgroup is a collection of form elements.  Formgroup inturn takes a js object as value. 
+This JS object has the type for the elements inside the form, which usually are type of FormControl. Now formcontrol acccepts three params as values, initial state, array of validator and array of async validators. We can say set initial value of username ot 'abcd' or let be null etc
+ this.singupForm = new FormGroup({
+      'username' : new FormControl(null),
+      'email' : new FormControl(null),
+      'gender' : new FormControl('male')
+    });
+    
+ - for reactive approach,  works on basis of ReactiveFormsModule class from angular forms. So need to add that to imports under module imports of appmodule
+ 
+ 
+
+   
