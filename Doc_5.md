@@ -99,6 +99,8 @@ This JS object has the type for the elements inside the form, which usually are 
   - Now with this nesting, the get methods will  have to take care of nesting as well. like 
   get(userData.username)
   
+  - We can use fromArray to dynamically add form elements. FormArray holds form control fields inside it, we can then add to it dynamically.
+  
   
  
  
