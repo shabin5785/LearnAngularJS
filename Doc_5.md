@@ -48,3 +48,8 @@ We can also add a local ref pointing it to the ngModelGroup like #user="ngModelG
 - instead we can access the form object from the reference. Then use the patchdata method ,where we only need to set the required element. BUt keep in mind that we nned to keep the structure, ie, if the element is inside a grp, we have to maintain that structure..
 
 - call the reset method on form to reset the form and clear all state of form. We can pass values to reset form to set values and still get a clean state of valid and touched.
+
+
+**Reactive Approach**
+----------------------------
+
