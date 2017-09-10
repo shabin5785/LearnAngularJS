@@ -82,6 +82,24 @@ This JS object has the type for the elements inside the form, which usually are 
              *ngIf=" !signupFrom.get('username').valid && signupFrom.get('username').touched">
              
   - to get overall form status we dont need the get operator. Like signupFrom.valid or signupFrom.touched
+  
+  - Form group not only represents whole form, but a group of elements within form. This is our grouping from template approach. So we have a nested set of form groups.
+   this.signupForm = new FormGroup({
+      'userData': new FormGroup({
+        'username' : new FormControl(null, Validators.required),
+        'email' : new FormControl(null,[Validators.required, Validators.email])
+      }),
+      'gender' : new FormControl('male')
+    });
+    
+ - now if we have nesting in TS like above we shld have nesting in html as well. A form, then may be div inside , then elements, ie, the same schema as the Object definition above..
+ <form  [formGroup]="signupForm" (ngSubmit)="onSubmit()">  
+        <div formGroupName="userData">
+  
+  - Now with this nesting, the get methods will  have to take care of nesting as well. like 
+  get(userData.username)
+  
+  
  
  
  
