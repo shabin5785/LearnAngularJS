@@ -65,6 +65,11 @@ This JS object has the type for the elements inside the form, which usually are 
     
  - for reactive approach,  works on basis of ReactiveFormsModule class from angular forms. So need to add that to imports under module imports of appmodule
  
+ - we then bind form to formgroup and elements to formcontrol elements like below.
+ < form  [formGroup]="singupForm"> 
+ < input type="text formControlName="email">
+ 
+ 
  
 
    
