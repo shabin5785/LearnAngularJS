@@ -69,7 +69,7 @@ This JS object has the type for the elements inside the form, which usually are 
  < form  [formGroup]="singupForm"> 
  < input type="text formControlName="email">
  
- 
+ - Here while submittng, we dont need to pass the form from temaplte to backend of refer it. As we have created and linked it from TS file.. Just refer it in submit method.
  
  
  
