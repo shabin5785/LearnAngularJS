@@ -101,7 +101,9 @@ This JS object has the type for the elements inside the form, which usually are 
   
   - We can use fromArray to dynamically add form elements. FormArray holds form control fields inside it, we can then add to it dynamically.
   
+  - Validator has fn that is executed automatically to check for validity. So we can create custom validator if needed. The method as obvious accepts a formcontrol element that it needs to validate and returns a JS object with a string key and a boolean value.
   
+ Now boolean here is true if validation fails, ie its invalid !!!. For sucess case we should just return null or dont return anyting. Never return false as it wont work.
  
  
  
