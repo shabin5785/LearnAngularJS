@@ -114,6 +114,8 @@ This JS object has the type for the elements inside the form, which usually are 
  
  - each form and infact each form control filed has two subscribers we can use, One value change subscriber and one status change subsciber.
  
+ - reactive form also has setvalue, patchvalue and resetform like template driven.
+ 
  
  
 
