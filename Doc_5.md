@@ -105,6 +105,11 @@ This JS object has the type for the elements inside the form, which usually are 
   
  Now boolean here is true if validation fails, ie its invalid !!!. For sucess case we should just return null or dont return anyting. Never return false as it wont work.
  
+ Now the custom validation method is called by angular not by us. so this reference will not point to class, and so we have to bind it ourselves.
+ 'username' : new FormControl(null, [Validators.required, this.checkforbiddenNames.bind(this)]),
+ 
+ 
+ 
  
  
 
