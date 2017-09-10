@@ -71,6 +71,13 @@ This JS object has the type for the elements inside the form, which usually are 
  
  - Here while submittng, we dont need to pass the form from temaplte to backend of refer it. As we have created and linked it from TS file.. Just refer it in submit method.
  
+ - important that we dont configure form in template. So the directives or validators in tempalte like required or ngvalid etc wont work. Our form resides on TS file. We only create a shadow of that in html, and sync it with TS file. So all form related operations has to be in TS file.
+
+
+- For validation, use Validators from angular/forms and use it in formgroup definition within every formcontrol field that we need to have validated, like ,
+ 'email' : new FormControl(null,[Validators.required, Validators.email]),
+ 
+ 
  
  
 
