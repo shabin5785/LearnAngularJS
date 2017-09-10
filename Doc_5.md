@@ -77,6 +77,9 @@ This JS object has the type for the elements inside the form, which usually are 
 - For validation, use Validators from angular/forms and use it in formgroup definition within every formcontrol field that we need to have validated, like ,
  'email' : new FormControl(null,[Validators.required, Validators.email]),
  
+ - to access form controls in template, we use the get method of the formgroup variable we synced up. We cannot just refere formname.valid like in template appraoch, like below
+  < span class="help-block"
+             *ngIf=" !signupFrom.get('username').valid && signupFrom.get('username').touched">
  
  
  
