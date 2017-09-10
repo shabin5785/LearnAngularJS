@@ -80,6 +80,8 @@ This JS object has the type for the elements inside the form, which usually are 
  - to access form controls in template, we use the get method of the formgroup variable we synced up. We cannot just refere formname.valid like in template appraoch, like below
   < span class="help-block"
              *ngIf=" !signupFrom.get('username').valid && signupFrom.get('username').touched">
+             
+  - to get overall form status we dont need the get operator. Like signupFrom.valid or signupFrom.touched
  
  
  
