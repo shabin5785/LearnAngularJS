@@ -10,3 +10,5 @@
 we can also parameters to our custom pipe as well.
 
 - ng g p is the cli command to create pipe
+
+- pipe input can be an array as well. We can iterate over that  in pipe and return a subset of the array.
