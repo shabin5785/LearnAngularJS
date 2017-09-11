@@ -8,3 +8,5 @@
 
 - we can write custom pipes. Just a calss with a transform method, returning the value converted from input. We then need to add the Pipe annotation to the class and give it a name, This name becomes the pipe name to be used in templates.Also add the class to declarations under app module
 we can also parameters to our custom pipe as well.
+
+- ng g p is the cli command to create pipe
