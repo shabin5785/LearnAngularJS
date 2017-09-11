@@ -117,3 +117,5 @@ This JS object has the type for the elements inside the form, which usually are 
  - reactive form also has setvalue, patchvalue and resetform like template driven.
  
  - splice allows us to split to remove an element from the array based on the index given by us.
+ 
+ - Form array structure is like this: It has a FormArray, then within that many formGroups and inside that the individual formControls. We dont define the form gruops, but we iterated for the array and get each gruop and then the elements inside them.
