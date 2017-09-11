@@ -120,4 +120,5 @@ This JS object has the type for the elements inside the form, which usually are 
  
  - Form array structure is like this: It has a FormArray, then within that many formGroups and inside that the individual formControls. We dont define the form gruops, but we iterated for the array and get each gruop and then the elements inside them.
  
-** - If we provide a service within a component, and then if we navigate away, the component is destroed and so is the provided sevice. When we come back,its initialized again and so we get a new service. So carefully see where we need to provide the service, like in above case at module level.**
+**If we provide a service within a component, and then if we navigate away, the component is destroed and so is the provided sevice. When we come back,its initialized again and so we get a new service. So carefully see where we need to provide the service, like in above case at module level.**
+
