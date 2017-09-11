@@ -116,7 +116,4 @@ This JS object has the type for the elements inside the form, which usually are 
  
  - reactive form also has setvalue, patchvalue and resetform like template driven.
  
- 
- 
-
-   
+ - splice allows us to split to remove an element from the array based on the index given by us.
