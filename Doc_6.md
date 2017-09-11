@@ -11,4 +11,4 @@ we can also parameters to our custom pipe as well.
 
 - ng g p is the cli command to create pipe
 
-- pipe input can be an array as well. We can iterate over that  in pipe and return a subset of the array.
+- pipe input can be an array as well. We can iterate over that  in pipe and return a subset of the array.  So we apply pipe to an array loop , the pipe will transform what is the output of that loop, like without pipe it was 10 times iteration, pipe can remove some elements and it iterates only 5 times.
