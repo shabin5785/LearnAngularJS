@@ -15,3 +15,5 @@ we can also parameters to our custom pipe as well.
 So applying pipes we can change behaviour of loops.
 
 - Angular wont re run the pipes when arrays or objects on the page cahgnes. Only if the pipe input changes, its re run. This is designed like that to avoid poor performance. Also due to this there are no inbuilt filter pipes in angular,as even with data changes the filters wont be run.
+
+We can enforce this by setting pure true for the pipe. But this will affect the performance
