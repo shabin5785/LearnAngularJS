@@ -30,3 +30,5 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 - we can use map operator to transform the observable response and convert its data to a better json form and then create another objservable which other parts of the app can use. We can even alter data and return new data!!!
 
 - as http returns an observable, instead of us subscribing and getting the data , we can use the async pipe to get the data out of the component.Easy... Async pipe will subscribe to the observable from http respnse and then get the data from that.
+
+- if we are not using hte observable returned by http request, the request wont be fired at ll.
