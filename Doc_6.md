@@ -19,3 +19,6 @@ So applying pipes we can change behaviour of loops.
 We can enforce this by setting pure true for the pipe. But this will affect the performance
 
 - async pipe : if we have say a object assigned to a promise, and if we display that, it will be shown as a promise, even if promise resolves to a string. this is because angular knows it only as a promise and is not re evaluating it. To fix this, we can add the async pipe, so that angular will wait till the promise or observable resolves and then use it.
+
+**Http**
+---------------
