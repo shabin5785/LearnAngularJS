@@ -35,3 +35,7 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 
 - if we are not using hte observable returned by http request, the request wont be fired at all
 
+**Authentication**
+---------------------
+
+
