@@ -28,3 +28,5 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 - Use header object from angular to change http headers and http object to create requests. http method take a config object and one of the args is header.
 
 - we can use map operator to transform the observable response and convert its data to a better json form and then create another objservable which other parts of the app can use. We can even alter data and return new data!!!
+
+- as http returns an observable, instead of us subscribing and getting the data , we can use the async pipe to get the data out of the component.Easy...
