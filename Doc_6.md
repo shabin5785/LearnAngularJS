@@ -1,3 +1,5 @@
+**Depending on where we put data, we have to send out updates or changes to all the components that use the data. So we use subject and subcribe.**
+
 **Pipes**
 -----------------
 - Pipes are built into angular that allows us to transform output., like converting string to uppercase while displaying
@@ -31,4 +33,5 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 
 - as http returns an observable, instead of us subscribing and getting the data , we can use the async pipe to get the data out of the component.Easy... Async pipe will subscribe to the observable from http respnse and then get the data from that.
 
-- if we are not using hte observable returned by http request, the request wont be fired at ll.
+- if we are not using hte observable returned by http request, the request wont be fired at all
+
