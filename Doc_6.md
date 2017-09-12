@@ -22,3 +22,6 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 
 **Http**
 ---------------
+
+- http functions in angular returns an observale which we can subscribe to and get teh result
+- Use header object from angular to change http headers and http object to create requests.
