@@ -85,6 +85,6 @@ Now if we have a module in shared scope, and if we load it in a lazy loaded modu
 
 - its  better if the app component has no declarations other than its main component. So we can move the remainig declaration to a core component and import it.
 
-WE can also move the services to this core module as well. 
+WE can also move the services to this core module as well. All these helps to keep app module lean
 
 
