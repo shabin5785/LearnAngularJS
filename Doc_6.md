@@ -43,4 +43,4 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 
 **Modules**
 ------------------------
-
+- imports have all other modules which exports a module. We can then use it within app. Declaraitons holds the components or directievs that we use within the app.
