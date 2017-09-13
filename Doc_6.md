@@ -78,4 +78,11 @@ for this we need to create separate module, then separate routing for module. No
 - You can protect lazy loaded routes by adding the canLoad  guard to the route which points to the lazily loaded module:
 { path: 'recipes', loadChildren: './recipes/recipes.module#RecipesModule', canLoad: [AuthGuard] } 
 
+- angular has a root injector to hold all services. All services provided by us is added to this. So even if we add service multipe times in provided, only one is injected in root injector. 
+But if we inject the service again in a lazy loaded module, angualr creates a child injector and loads the modules. SO we will have multiple instances of same service loaded.
+Now if we have a module in shared scope, and if we load it in a lazy loaded module, then a child injector module is used, so we get different instances. 
+**So dont provide services on a shared module..**
+
+
+
 
