@@ -55,7 +55,7 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 
 - we cannto declare the same component or directive in more than one module. So put them in one place, at the app module.
 
-- to share directives or components between modules, we create a shared module, that doesnt contain any components or features. Then put the common one inside shared module and then import and use it. typically we have one shared module in the app.
+- to share directives or components between modules, we create a shared module, that doesnt contain any components or features. Then put the common one inside shared module and then import and use it. typically we have one shared module in the app. By default everything in a module is avaibale within that only. So we need to export to use it.
 
 - Now if two modules needs same directieve, like a custom one , we need to import them in both. Also all modules needs the commonModule to be imported.
 
