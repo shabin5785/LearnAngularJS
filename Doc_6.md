@@ -87,4 +87,16 @@ Now if we have a module in shared scope, and if we load it in a lazy loaded modu
 
 WE can also move the services to this core module as well. All these helps to keep app module lean
 
+- Angular normally works by using Just in time compilation. Angular downloads the code to browser and compile it to javascript. WE can also compile the code before loading it in browser ,before even releasing it to production. This is ahead of time compilation. SO app can start faster,tempaltes are checked whle we build  and errors are found much earlier during development. Also we can strip features we dont need, like the angualr compiler as we dont need the compiler to be used within browser, SO we can omit it and save file size. Also like if we never uses ngif in our app, then Ahead of time can remove ngif from the code and have much much smaller app.
+
+- ng build --prod --aot : build for prod and ahead of time compilation
+
+- we can load all lazy loaded modules preloaded. These modules are loaded after all main modules are loaded.so we can avoid the delay in loading the lazy laoded modules.
+
+**Deployment**
+-------------------
+- build app for production using AOT
+- Set base element correctly, taking care of relative paths
+- Make sure server always returns index.html file. THis is helpful for 404, as routes are managed by angular and once we get 404, server wont be able to figure out routes.
+
 
