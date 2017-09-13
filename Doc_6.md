@@ -1,5 +1,7 @@
 **Depending on where we put data, we have to send out updates or changes to all the components that use the data. So we use subject and subcribe.**
 
+**if there are multipe lines to be controlled by an ngIf in ui, put them together in a ngTemplate and then control that with if**
+
 **Pipes**
 -----------------
 - Pipes are built into angular that allows us to transform output., like converting string to uppercase while displaying
@@ -38,4 +40,3 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 **Authentication**
 ---------------------
 - challenge in SPA is that the connection between ui and backend is nto strong. There is no binding between them. Loosely coupled. So no session stored in server or server remembers the client. Here its better to use a token based storage like JWT ( read why session in jwt is bad)
-
