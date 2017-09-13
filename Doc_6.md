@@ -40,3 +40,7 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 **Authentication**
 ---------------------
 - challenge in SPA is that the connection between ui and backend is nto strong. There is no binding between them. Loosely coupled. So no session stored in server or server remembers the client. Here its better to use a token based storage like JWT ( read why session in jwt is bad)
+
+**Modules**
+------------------------
+
