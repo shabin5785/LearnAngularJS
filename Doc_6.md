@@ -44,3 +44,9 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 **Modules**
 ------------------------
 - imports have all other modules which exports a module. We can then use it within app. Declaraitons holds the components or directievs that we use within the app.
+
+- we can combine a set of components into a feature module and then exporting it and using it in our app module. Now app becomes easier to maintain. Like division of features.
+
+- now while forming a module, should we keep the service for that feature inside the module? Probably no as its used outside the feature as well. So keep it outside. Though even if we keep it inside the module, it will work as anuglar injects all services inside the modules it loads into root level. But probably keeping it outside is better
+
+
