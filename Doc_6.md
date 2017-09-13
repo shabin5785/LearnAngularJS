@@ -72,3 +72,7 @@ So we define routes in individual modules and then import imports to app module,
 - But if we use selectors instead of routing then we have to define the component within the same module or use a moduel that expports thee routes. Confusing...
 
 - Everyting in imports under app module is loaded at app start. This is eager loading. To avoid this and do lazy loading, we have to change this. We want to load a module only if the user visits it or needs it.
+
+for this we need to create separate module, then separate routing for module. Now in the main routing file, we load the module dynamically using LoadChildren proeprty. THis causes the module to be loaded only when we visit the route specified in the path.
+
+
