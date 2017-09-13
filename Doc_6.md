@@ -49,4 +49,4 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 
 - now while forming a module, should we keep the service for that feature inside the module? Probably no as its used outside the feature as well. So keep it outside. Though even if we keep it inside the module, it will work as anuglar injects all services inside the modules it loads into root level. But probably keeping it outside is better
 
-
+- Now if the components in the feature use some angualr import, and if only they use that, we should move that import to the feature module and not put in root module. Like reactiveformcomponent or like that
