@@ -75,4 +75,7 @@ So we define routes in individual modules and then import imports to app module,
 
 for this we need to create separate module, then separate routing for module. Now in the main routing file, we load the module dynamically using LoadChildren proeprty. THis causes the module to be loaded only when we visit the route specified in the path.
 
+- You can protect lazy loaded routes by adding the canLoad  guard to the route which points to the lazily loaded module:
+{ path: 'recipes', loadChildren: './recipes/recipes.module#RecipesModule', canLoad: [AuthGuard] } 
+
 
