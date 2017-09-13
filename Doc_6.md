@@ -58,3 +58,5 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 - Now if two modules needs same directieve, like a custom one , we need to import them in both. Also all modules needs the commonModule to be imported.
 
 - Browser moodule contains all features of common module plus features extra for bootstrap. So we should use brwser module in our app module and common modules for all others
+
+- with different modules, we cannto put routes in one palce and import to app module. it wont work for other modules. SO we have to define routes for each module in separate files and use it wihtih that module, importing them there.
