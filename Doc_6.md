@@ -57,7 +57,7 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 
 - to share directives or components between modules, we create a shared module, that doesnt contain any components or features. Then put the common one inside shared module and then import and use it. typically we have one shared module in the app. By default everything in a module is avaibale within that only. So we need to export to use it.
 
-- Now if two modules needs same directieve, like a custom one , we need to import them in both. Also all modules needs the commonModule to be imported.
+- Now if two modules needs same directieve, like a custom one , we need to import them in both. Also all modules needs the commonModule to be imported whenever they use the common directives like for  if etc
 
 - Browser moodule contains all features of common module plus features extra for bootstrap. So we should use brwser module in our app module and common modules for all others
 
@@ -66,3 +66,7 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 But in app module we use RouteModuel.root and in all other modules we should use RouterMoudle.forChild. This will take care of the route handling.  Our child module is imported to app module and hence the child route as well. SO child route should be forChild , and on importing to app module having forRoot, the routes will be merged. As feature module is a child of app module and imported within that,
 
 So we define routes in individual modules and then import imports to app module, though that the routes as well.
+
+- Routes can be anywhere in the app. Just need to define them before the route is used. (Then what about above?).
+
+- But if we use selectors instead of routing then we have to define the component within the same module or use a moduel that expports thee routes. Confusing...
