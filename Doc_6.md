@@ -55,6 +55,8 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 
 - we cannto declare the same component or directive in more than one module. So put them in one place, at the app module.
 
+- to share directives or components between modules, we create a shared module, that doesnt contain any components or features. Then put the common one inside shared module and then import and use it. typically we have one shared module in the app.
+
 - Now if two modules needs same directieve, like a custom one , we need to import them in both. Also all modules needs the commonModule to be imported.
 
 - Browser moodule contains all features of common module plus features extra for bootstrap. So we should use brwser module in our app module and common modules for all others
