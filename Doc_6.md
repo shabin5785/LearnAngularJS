@@ -47,8 +47,14 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 
 - we can combine a set of components into a feature module and then exporting it and using it in our app module. Now app becomes easier to maintain. Like division of features.
 
+- Delcarations are nto shared between modules.
+
 - now while forming a module, should we keep the service for that feature inside the module? Probably no as its used outside the feature as well. So keep it outside. Though even if we keep it inside the module, it will work as anuglar injects all services inside the modules it loads into root level. But probably keeping it outside is better
 
 - Now if the components in the feature use some angualr import, and if only they use that, we should move that import to the feature module and not put in root module. Like reactiveformcomponent or like that
 
+- we cannto declare the same component or directive in more than one module. So put them in one place, at the app module.
+
 - Now if two modules needs same directieve, like a custom one , we need to import them in both. Also all modules needs the commonModule to be imported.
+
+- Browser moodule contains all features of common module plus features extra for bootstrap. So we should use brwser module in our app module and common modules for all others
