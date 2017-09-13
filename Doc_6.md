@@ -83,6 +83,8 @@ But if we inject the service again in a lazy loaded module, angualr creates a ch
 Now if we have a module in shared scope, and if we load it in a lazy loaded module, then a child injector module is used, so we get different instances. 
 **So dont provide services on a shared module..**
 
+- its  better if the app component has no declarations other than its main component. So we can move the remainig declaration to a core component and import it.
 
+WE can also move the services to this core module as well. 
 
 
