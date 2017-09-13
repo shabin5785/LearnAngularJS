@@ -60,3 +60,5 @@ We can enforce this by setting pure true for the pipe. But this will affect the 
 - Browser moodule contains all features of common module plus features extra for bootstrap. So we should use brwser module in our app module and common modules for all others
 
 - with different modules, we cannto put routes in one palce and import to app module. it wont work for other modules. SO we have to define routes for each module in separate files and use it wihtih that module, importing them there.
+
+But in app module we use RouteModuel.root and in all other modules we should use RouterMoudle.forChild. This will take care of the route handling.  Our child module is imported to app module and hence the child route as well. SO child route should be forChild , and on importing to app module having forRoot, the routes will be merged. As feature module is a child of app module and imported within that,
